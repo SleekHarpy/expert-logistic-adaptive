@@ -1,0 +1,27 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  font-family: $main-font-family;
+  text-transform: uppercase;
+}
+
+.site-list__item {
+  margin-right: 35px;
+  margin-bottom: 10px;
+
+  display: block;
+}
+
+.site-list__link {
+  color: $main-color;
+  text-decoration: none;
+}

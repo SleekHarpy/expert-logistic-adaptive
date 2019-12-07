@@ -1,0 +1,26 @@
+.page-header {
+  margin: 0 auto;
+
+  max-width: $desktop-max-width;
+}
+
+.page-header__wrapper {
+  position: relative;
+  padding: 0 48px;
+
+  display: flex;
+  width: 100%;
+}
+
+.page-header__phone {
+  margin: 0;
+  margin-top: 40px;
+  padding-right: 3px;
+
+  color: $main-color;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  font-family: $main-font-family;
+  text-transform: uppercase;
+}
