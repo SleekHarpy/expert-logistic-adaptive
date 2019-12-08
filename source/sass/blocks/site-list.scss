@@ -65,3 +65,19 @@
     text-align: center;
   }
 }
+
+@media (max-width: $mobile-max-width) {
+  .main-nav--active .site-list {
+    padding-top: 150px;
+
+    &::before {
+      top: 116px;
+    }
+  }
+
+  .main-nav--active .site-list__item {
+    margin-bottom: 24px;
+
+    font-size: 20px;
+  }
+}
