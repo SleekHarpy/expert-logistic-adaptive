@@ -27,37 +27,11 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .site-list {
-    display: none;
-  }
-
-  .main-nav--active .site-list {
-    position: relative;
-    padding-top: 266px;
-
-    display: block;
-
-    width: 100%;
-
-    &::before {
-      position: absolute;
-      top: 218px;
-      left: 0;
-
-      display: block;
-      width: 100%;
-      height: 2px;
-
-      background-color: $main-color;
-      opacity: 0.16;
-
-      content: "";
-    }
-  }
-
-  .main-nav--active .site-list__item {
+  .page-header--opened .site-list__item {
     margin-right: 0;
     margin-bottom: 48px;
+
+    width: 100%;
 
     font-size: 32px;
     line-height: 125%;
@@ -67,15 +41,7 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .main-nav--active .site-list {
-    padding-top: 150px;
-
-    &::before {
-      top: 116px;
-    }
-  }
-
-  .main-nav--active .site-list__item {
+  .page-header--opened .site-list__item {
     margin-bottom: 24px;
 
     font-size: 20px;

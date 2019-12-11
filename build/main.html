@@ -13,34 +13,35 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="main-page">
 
-    <header class="page-header">
-    <div class="page-header__wrapper"> <!--page-header__wrapper--menu-->
+    <header class="page-header"> <!--page-header--opened-->
+    <div class="page-header__wrapper">
       <a class="page-header__logo">
         <picture>
           <source media="(max-width: 1023px)" srcset="img/logotype-tablet.svg">
           <img class="page-header__logo-image" src="img/logo.svg" alt="Эксперт-логистик">
         </picture>
       </a>
-      <nav class="main-nav main-nav--nojs"> <!--main-nav--active-->
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="#">О компании</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">Услуги</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">Клиенты</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">Регионы</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">Карьера</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
-          </ul>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a class="site-list__link" href="#">О компании</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Услуги</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Клиенты</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Регионы</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Карьера</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
+        </ul>
       </nav>
-      <div class="page-header__phone-container"> <!--page-header__phone-container--menu-->
-        <p class="page-header__phone-number">+7 (495) 363–30–20</p>
+      <div class="page-header__phone-container">
+        <p class="page-header__phone-number" href="tel:+74953633020">+7 (495) 363–30–20</p>
       </div>
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     </header>
+
+    <script src="js/popup-menu.js"></script>
+    <script src="js/picturefill.js"></script>
 
   </body>
 
