@@ -13,32 +13,69 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
-  <body class="main-page">
+  <body class="main-page"> <!--main-page--menu-opened-->
 
     <header class="page-header"> <!--page-header--opened-->
-    <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <picture>
-          <source media="(max-width: 1023px)" srcset="img/logotype-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo.svg" alt="Эксперт-логистик">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="#">О компании</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Услуги</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Клиенты</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Регионы</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Карьера</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo.svg" alt="Эксперт-логистик">
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a class="site-list__link" href="#">О компании</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Услуги</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Клиенты</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Регионы</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Карьера</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__phone-container">
+          <a class="page-header__phone-number" href="tel:+74953633020">+7 (495) 363–30–20</a>
+        </div>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+    </header>
+
+    <main class="main">
+
+    </main>
+
+    <footer class="page-footer page-footer--hidden"> <!--page-footer--menu-opened-->
+      <div class="page-footer__wrapper">
+
+        <div class="page-footer__copyright-download">
+          <div class="copyright">
+            <p class="copyright__content">ООО «Экспрет логистик» © 2019</p>
+          </div>
+          <div class="download">
+            <a class="download__presentation" href="#">Скачать презентацию</a>
+          </div>
+        </div>
+
+      <nav class="footer-nav">
+        <ul class="footer-nav__list footer-list">
+          <li class="footer-list__item footer-list__item--security">
+            <a class="footer-list__link" href="#">Безопасность</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="#">Лицензии и сертификаты</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="#">Вакансии</a>
+          </li>
         </ul>
       </nav>
-      <div class="page-header__phone-container">
-        <p class="page-header__phone-number" href="tel:+74953633020">+7 (495) 363–30–20</p>
+
+      <div class="copyright copyright--mobile-menu">
+        <p class="copyright__content">ООО «Экспрет логистик» © 2019</p>
       </div>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
-    </header>
+
+      </div>
+    </footer>
 
     <script src="js/popup-menu.js"></script>
     <script src="js/picturefill.js"></script>

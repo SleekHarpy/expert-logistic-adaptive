@@ -1,0 +1,19 @@
+.footer-nav {
+  max-width: 800px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .footer-nav {
+    width: 60%;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .footer-nav {
+    width: 100%;
+    max-width: none;
+
+    transform: translateY(-16px);
+  }
+}

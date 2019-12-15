@@ -1,0 +1,22 @@
+.main {
+  flex: 1 0 auto;
+  //display: none;
+
+  height: 723px;
+}
+
+@media (max-width: $tablet-max-width) {
+  .main {
+    height: 877px;
+
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .main {
+    height: 500px;
+  }
+}

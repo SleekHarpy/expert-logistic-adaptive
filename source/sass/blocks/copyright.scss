@@ -1,0 +1,41 @@
+.copyright {
+  padding: 0 16px;
+
+  &--mobile-menu {
+    display: none;
+  }
+}
+
+.copyright__content {
+  margin: 0;
+
+  color: $main-color;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+
+  opacity: 0.8;
+}
+
+@media (max-width: $tablet-max-width) {
+  .copyright {
+
+    order: 1;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .copyright {
+    display: none;
+
+    &--mobile-menu {
+      margin-top: -13px;
+      padding: 0;
+
+      display: block;
+    }
+  }
+}

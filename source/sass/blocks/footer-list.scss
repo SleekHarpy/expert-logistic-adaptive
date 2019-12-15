@@ -1,0 +1,79 @@
+.footer-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.footer-list__item {
+  position: relative;
+  margin-right: 32px;
+
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-list__item--security {
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -17px;
+
+    display: block;
+    width: 10px;
+    height: 18px;
+
+    background-image: url("../img/icon-tree-leaf.svg");
+    background-repeat: no-repeat;
+
+    content: "";
+  }
+}
+
+.footer-list__link {
+  color: $main-color;
+  text-decoration: none;
+}
+
+@media (max-width: $tablet-max-width) {
+  .footer-list {
+    margin-left: auto;
+    padding: 13px 0;
+
+    width: 90%;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .footer-list {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+  }
+
+  .footer-list__item {
+    margin-right: 16px;
+    margin-bottom: 11px;
+
+    &:first-child {
+      padding-left: 180px;
+    }
+  }
+
+  .footer-list__item--security {
+    &::before {
+      display: none;
+    }
+  }
+}
